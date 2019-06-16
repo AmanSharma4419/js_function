@@ -366,3 +366,19 @@ var test = (a,b) => {
  * @param {string} word2
  * @return {string} joined the words joined with a space
  */
+//function declaration
+function add(a, b) {
+  return(a + b);
+}
+//function expression 
+let add = function {
+  return(a + b);
+}
+//arrow function  with brackets 
+let add = (a, b) => {
+  return(a + b);
+}
+//arrow function without brackets 
+let add = (a, b) => (a + b);
+//function invocation
+add(a ,b);
