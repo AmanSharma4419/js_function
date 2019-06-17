@@ -341,13 +341,38 @@ var test = (a,b) => {
  * @return {boolean} the number is even
  */
 // function declaration
-
+function even(n) {
+  return Boolean(n%2==0);
+}
+//function expression
+let even = function (n) {
+  return Boolean(n%2==0);
+}
+//arrow function with brackets
+let even = (n) => {
+  return Boolean(n%2==0);
+}
+//function invocation 
+even(n);
 /**
  * Returns true if `n` is odd.
  * @param {number} n
  * @return {boolean} the number is odd
  */
-
+//function declaration
+function odd(n) {
+  return Boolean(n%2==1);
+}
+//function expression
+let even = function (n) {
+  return Boolean(n%2==1);
+}
+//arrow function with brackets 
+let even = (n) => {
+  return Boolean(n%2==1);
+}
+//function invocation
+even(n);
 /**
  * Returns a letter grade.
  * "A": 90-100%
@@ -359,7 +384,80 @@ var test = (a,b) => {
  * @param {number} total maximum possible score
  * @return {string} the score represented as a letter grade
  */
+//function declaration 
+function grade(score ,total) {
+  switch(true) {
+    case (score>=90 && score <100):
+    return "a";
+    break;
 
+    case (score>=80 && score <89):
+    return "b";
+    break;
+
+    case (score>=70 && score <79):
+    break;
+    return "c";
+
+    case (score>=60 && score <69):
+    break;
+    return "d";
+
+    case (score>=0 && score <59):
+    return "f";
+    break;
+  }
+}
+//function expression
+let test = function (score ,total) {
+  switch(true) {
+    case (score>=90 && score <100):
+    return "a";
+    break;
+
+    case (score>=80 && score <89):
+    return "b";
+    break;
+
+    case (score>=70 && score <79):
+    break;
+    return "c";
+
+    case (score>=60 && score <69):
+    break;
+    return "d";
+
+    case (score>=0 && score <59):
+    return "f";
+    break;
+  }
+}
+//arrow function with brackets
+let test =  (score ,total) => {
+  switch(true) {
+    case (score>=90 && score <100):
+    return "a";
+    break;
+
+    case (score>=80 && score <89):
+    return "b";
+    break;
+
+    case (score>=70 && score <79):
+    break;
+    return "c";
+
+    case (score>=60 && score <69):
+    break;
+    return "d";
+
+    case (score>=0 && score <59):
+    return "f";
+    break;
+  }
+}
+//function invocation
+grade(grade, score);
 /**
  * Joins two strings with a space.
  * @param {string} word1
@@ -371,7 +469,7 @@ function add(a, b) {
   return(a + b);
 }
 //function expression 
-let add = function {
+let add = function (a, b) {
   return(a + b);
 }
 //arrow function  with brackets 
