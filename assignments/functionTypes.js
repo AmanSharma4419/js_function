@@ -204,21 +204,21 @@ squre(2);=4
  * @param {number} b
  * @return {boolean} `a` is larger than `b`
  */
-//function declaration
+// function declaration
 function value(a, b) {
   return Boolean(a>b);
 }
-//function expression
+// function expression
 var test = function (a,b) {
   return Boolean(a>b);
 }
-//arrow function with brackets
+// arrow function with brackets
 var test = (a,b) => {
   return Boolean(a>b);
 }
-//arrow function withiout brackets
+// arrow function withiout brackets
 var test = (a,b) => return Boolean(a>b);
-//function invocation
+// function invocation
 value(2,4)
 /**
  * Returns true if `a` is less than `b`.
@@ -226,17 +226,17 @@ value(2,4)
  * @param {number} b
  * @return {boolean} `a` is smaller than `b`
  */
-//function invocation
+// function invocation
  value(a,b);
-//function declration
+// function declration
   function test(a,b) {
       return Boolean(a<b);
   }
-//function expression
+// function expression
  var test1 = function (a,b) {
     return Boolean(a);
 }
-//arrow function with curly brackets
+// arrow function with curly brackets
 var test1 = (a,b)=> {
     return Boolean(b<a);
   }
@@ -248,21 +248,21 @@ value(a,b);
  * @param {number} b
  * @return {boolean} the numbers are equal
  */
-//function declaration
+// function declaration
 function test(a,b) {
   return Boolean(a=b);
 }
-//function expression
+// function expression
 var test = function (a,b) {
   return Boolean(a=b);
 }
-//arrow function with curly brackets
+// arrow function with curly brackets
 var test = (a,b) => {
   return Boolean(a=b);
 }
-//arrow function without curly brackets
+// arrow function without curly brackets
 var test = (a,b) => return => Boolean(a=b);
-//function invocation
+// function invocation
 test(a,b);
 /**
  * Returns the smallest value of two numbers.
@@ -270,7 +270,7 @@ test(a,b);
  * @param {number} y
  * @return {number} the smallest number
  */
-//function declaration
+// function declaration
 function num(a,b) {
   if (a>b) {
     return b;
@@ -279,7 +279,7 @@ function num(a,b) {
     return a;
   }
 }
-//function expression
+// function expression
 var test = function (a,b) {
   if (a>b) {
     return b;
@@ -287,7 +287,7 @@ var test = function (a,b) {
     return a;
   }
 }
-//arrow function with curly brackets
+// arrow function with curly brackets
 var test = (a,b)=> {
   if (a>b) {
     return b;
@@ -295,7 +295,7 @@ var test = (a,b)=> {
     return a;
   }
 }
-//function invocation 
+// function invocation 
 num(a,b);
 /**
  * Returns the largest value of two numbers.
@@ -303,7 +303,7 @@ num(a,b);
  * @param {number} y
  * @return {number} the largest number
  */
-//function declaration 
+// function declaration 
 function value(a,b) {
   if (a>b) {
     return a;
@@ -333,7 +333,7 @@ var test = (a,b) => {
       return 0;
     }
   }
-  //function invocation
+  // function invocation
   value(a,b);
 /**
  * Returns true if `n` is even.
@@ -344,34 +344,34 @@ var test = (a,b) => {
 function even(n) {
   return Boolean(n%2==0);
 }
-//function expression
+// function expression
 let even = function (n) {
   return Boolean(n%2==0);
 }
-//arrow function with brackets
+// arrow function with brackets
 let even = (n) => {
   return Boolean(n%2==0);
 }
-//function invocation 
+// function invocation 
 even(n);
 /**
  * Returns true if `n` is odd.
  * @param {number} n
  * @return {boolean} the number is odd
  */
-//function declaration
+// function declaration
 function odd(n) {
   return Boolean(n%2==1);
 }
-//function expression
+// function expression
 let even = function (n) {
   return Boolean(n%2==1);
 }
-//arrow function with brackets 
+/ /arrow function with brackets 
 let even = (n) => {
   return Boolean(n%2==1);
 }
-//function invocation
+// function invocation
 even(n);
 /**
  * Returns a letter grade.
@@ -384,7 +384,7 @@ even(n);
  * @param {number} total maximum possible score
  * @return {string} the score represented as a letter grade
  */
-//function declaration 
+// function declaration 
 function grade(score ,total) {
   switch(true) {
     case (score>=90 && score <100):
@@ -408,7 +408,7 @@ function grade(score ,total) {
     break;
   }
 }
-//function expression
+// function expression
 let test = function (score ,total) {
   switch(true) {
     case (score>=90 && score <100):
@@ -432,7 +432,7 @@ let test = function (score ,total) {
     break;
   }
 }
-//arrow function with brackets
+// arrow function with brackets
 let test =  (score ,total) => {
   switch(true) {
     case (score>=90 && score <100):
@@ -456,7 +456,7 @@ let test =  (score ,total) => {
     break;
   }
 }
-//function invocation
+// function invocation
 grade(grade, score);
 /**
  * Joins two strings with a space.
@@ -464,19 +464,19 @@ grade(grade, score);
  * @param {string} word2
  * @return {string} joined the words joined with a space
  */
-//function declaration
+// function declaration
 function add(a, b) {
   return(a + b);
 }
-//function expression 
+// function expression 
 let add = function (a, b) {
   return(a + b);
 }
-//arrow function  with brackets 
+// arrow function  with brackets 
 let add = (a, b) => {
   return(a + b);
 }
-//arrow function without brackets 
+// arrow function without brackets 
 let add = (a, b) => (a + b);
-//function invocation
+// function invocation
 add(a ,b);

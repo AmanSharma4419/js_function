@@ -45,6 +45,14 @@ function checkAge(age) {
 
   4.2 🎖Convert the above function using `||` operator.
   ```js
+  function checkAge(age) {
+  if (age > 18||age=18) {
+    return true;
+  } else {
+    // ...
+    return confirm("Did parents allow you?");
+  }
+}
   // your code goes here
   ```
 Will the function work differently if else is removed like below?
@@ -57,6 +65,8 @@ function checkAge(age) {
   // ...
   return confirm("Did parents allow you?");
 }
+```
+yes.it will.
 ```
 Is there any difference in the behavior of these two variants? If there is what is that?
 
@@ -83,6 +93,9 @@ Is there any difference in the behavior of these two variants? If there is what 
 6. 🎖Write a program that asks the user for a number n using prompt and prints the sum of the numbers 1 to n
 
 ```js
+let number = prompt("enter the number")
+
+
 // your code goes here
 ```
 7. 🎖Modify the previous program such that only multiples of 5 or 7 are considered in the sum, e.g. n = 20 (5,7,10,14,15,20) 71
@@ -95,6 +108,12 @@ Is there any difference in the behavior of these two variants? If there is what 
 
 ```js
 // Your code here.
+function min(num1,num2) {
+  console.log(math.min(0, 10));
+}
+function min(num1,num2) {
+  console.log(math.min(0, -10));
+}
 
 console.log(min(0, 10));
 // → 0
