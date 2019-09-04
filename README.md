@@ -3,7 +3,7 @@
 The aim of the exercise is to get started with Function
 * [ ] Function Decleration
 * [ ] Function Expression
-    * [ ] Arrow Function
+* [ ] Arrow Function
 * [ ] Function Invocation
 * [ ] IIFE
 
